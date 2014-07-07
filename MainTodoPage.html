@@ -1,0 +1,29 @@
+<html ng-app>
+<head>
+    <script type="text/javascript" src="./lib/angular.js"></script>
+    <script type="text/javascript" src="AllController.js"></script>
+    <link rel="stylesheet" href="lib/MyCss.css"/>
+</head>
+<body>
+<div ng-controller="TodoCtrl" >
+    <h1>You have work to done this time</h1>
+    <form name="fnm" ng-submit="addtodo()">
+        <input type="text" name="newtodo" ng-model="newTodo" required/>
+        <button>Add</button>
+
+    </form>
+    <ol>
+        <li ng-repeat="todo in todos">
+            <input type="checkbox" ng-model="todo.done"/>
+            <span ng-class="{'done':todo.done}">{{todo.title}}</span>
+
+        </li>
+    </ol>
+
+    <br>
+    <button ng-click="clearCompleted()">Clear completed</button>
+</div>
+
+</body>
+
+</html>
