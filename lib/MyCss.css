@@ -1,17 +1,56 @@
+.clr
+{
+    background-color: #ffddad;
+    color: #003bb3;
+}
+ .done
+ {
+     text-decoration: line-through;
+     background-color: #a0b7bd;
+     *background-color: #a9302a;
+ }
+
+.divbg
+{
+    background-image: url('../lib/image/todo.jpeg');
+
+}
+
 
 body {
-    background-color: #1cc7ff;
+    background-image: url('../lib/image/background-html-color-8.jpg');
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
-.done {
-    text-decoration: line-through;
-    color: dimgrey;
+/* Custom container */
+.container-narrow {
+    margin: 0 auto;
+    max-width: 700px;
+}
+.container-narrow > hr {
+    margin: 30px 0;
 }
 
+/* Main marketing message and sign up button */
+.jumbotron {
+    background-image: url('../lib/image/img.jpg');
+    margin: 60px 0;
+    text-align: center;
+}
+.jumbotron h1 {
+    font-size: 72px;
+    line-height: 1;
+}
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
 
-div
-{
-    color: blanchedalmond;
-    font-size:30px;
-
+/* Supporting marketing content */
+.marketing {
+    margin: 60px 0;
+}
+.marketing p + h4 {
+    margin-top: 28px;
 }

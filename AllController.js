@@ -5,6 +5,11 @@ function TodoCtrl($scope) {
             "title": "First To do ",
             "done": false
 
+        },
+        {
+            "title": "second To do ",
+            "done": true
+
         }
     ];
 
